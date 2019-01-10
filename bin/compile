@@ -35,5 +35,6 @@ echo "-----> installing posgtresql"
 
 apt-get $APT_OPTIONS update | indent
 apt-get $APT_OPTIONS -y --force-yes -d install --reinstall libpq-dev | indent
+gem install pg -- --with-pg-config=/usr/pgsql-9.4/bin/pg_config
 
 exit 0
